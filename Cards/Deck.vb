@@ -44,4 +44,50 @@ Public Class Deck
 
         newDecks.CopyTo(cards, 0)
     End Sub
+
+    Private nFlop As Boolean
+    Public Property Flop() As Boolean
+        Get
+            Return nFlop
+        End Get
+        Set(ByVal value As Boolean)
+            nFlop = value
+        End Set
+    End Property
+
+    Private nTurn As Boolean
+    Public Property Turn() As Boolean
+        Get
+            Return nTurn
+        End Get
+        Set(ByVal value As Boolean)
+            nTurn = value
+        End Set
+    End Property
+
+
+
+    Private nRiver As Boolean
+    Public Property River() As Boolean
+        Get
+            Return nRiver
+        End Get
+        Set(ByVal value As Boolean)
+            nRiver = value
+        End Set
+    End Property
+
+
+    Private nPotValue As Long
+    Public Property PotValue() As Long
+        Get
+            Return nPotValue
+        End Get
+        Set(ByVal value As Long)
+            nPotValue = value
+        End Set
+    End Property
+
+
+
 End Class
